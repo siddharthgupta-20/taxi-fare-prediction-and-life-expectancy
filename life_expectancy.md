@@ -1,4 +1,4 @@
-# taxi-fare-prediction-and-life-expectancy
+# life-expectancy
 Importing necessary library
 
 ● Reading the file
