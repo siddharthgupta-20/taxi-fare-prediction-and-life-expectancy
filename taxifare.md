@@ -27,8 +27,11 @@ First I created my own linear regression model using sklearn library and the con
 
 ● Pseudo inverse:
 np.dot(np.dot(np.linalg.inv(np.dot(A.transpose(),A)),A.transpose()),y_train)
-This is the algorithm to calculate the weight vector. Here A is the numpy matrix of the inputs. The error is quite low in this (~0.01) hence it is a good metric to calculate our outcome.
-I tried to create K fold validation for pseudo inverse as well but a “UFuncTypeError” pop up which i was unable to resolve for a very long time(~8 hours) I also tried to use sympy
-which uses symbols for all calculations but still could not resolve the error.
-● I also tried to use a support vector machine for it. But it returns only labels so we have to convert out y_train to a label (using labelEncoder()) but still it wasn’t good enough hence I choose not to show it and comment it out.
+This is the algorithm to calculate the weight vector. Here A is the numpy matrix of the inputs. The error is quite low in this (~0.01) hence it is a good metric to
+calculate our outcome.
+I tried to create K fold validation for pseudo inverse as well but a “UFuncTypeError” pop up which i was unable to resolve for a very long time(~8 hours) I also tried
+to use sympy which uses symbols for all calculations but still could not resolve the error.
+● I also tried to use a support vector machine for it. But it returns only labels so we have to convert out y_train to a label (using labelEncoder()) but still it
+wasn’t good enough hence I choose not to show it and comment it out.
+
 Finally I created a pipeline for scaling training and validating the data.
